@@ -9,5 +9,6 @@ export default {
     secondary: '#b30000',
     secondaryLight: '#8983C4',
     block: '#0000001A',
-    cancel: '#FF0000'
+    cancel: '#FF0000',
+    gourmet: '#35140E',
   }
