@@ -15,7 +15,7 @@ export default function Navigation() {
         screenOptions={({ navigation }) => ({
           title: 'Degustus',
           headerStyle: {
-            backgroundColor: colors.black,
+            backgroundColor: colors.secondary,
           },
           headerTintColor: colors.white,
           headerTitleAlign: 'center',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, Text } from 'react-native';
 
 import { Content, ButtonCard, ButtonArea, ButtonText, ContainerOption } from './style';
 
