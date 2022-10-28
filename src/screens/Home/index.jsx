@@ -3,23 +3,21 @@ import { Image, Text } from 'react-native';
 
 import { Content, ButtonCard, ButtonArea, ButtonText, ContainerOption } from './style';
 
-const goTo = (teste) => {
-  console.log('goTo');
-
-};
-
-
 export default function Home({ navigation }) {
+  const goTo = (data) => {
+    navigation.navigate(data);
+  };
+
   return (
     <Content>
       <ButtonArea>
-        <ButtonCard onPress={() => goTo('InventoryScreen')}>
+        <ButtonCard onPress={() => goTo('Beer')}>
           <ContainerOption color={'beer'}>
             <Image source={require('../../../assets/degustus/beer.png')}  />
             <ButtonText>Degustus Beer</ButtonText>
           </ContainerOption>
         </ButtonCard>
-        <ButtonCard onPress={() => goTo('StockAdjustmentScreen')} >
+        <ButtonCard onPress={() => goTo('Gourmet')} >
           <ContainerOption color={'gourmet'}>
             <Image source={require('../../../assets/degustus/gourmet.png')}  />
             <ButtonText>Degustus Gourmet</ButtonText>

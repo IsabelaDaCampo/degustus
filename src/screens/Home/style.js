@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import colors from '../../helpers/colors';
 import { View, TouchableOpacity, Text } from 'react-native';
+import colors from '../../helpers/colors';
 
 export const Content = styled(View)`
     flex: 1;

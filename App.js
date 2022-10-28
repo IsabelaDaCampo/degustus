@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View, KeyboardAvoidingView, SafeAreaView, Text } from 'react-native';
+import { StatusBar, StyleSheet, KeyboardAvoidingView, SafeAreaView } from 'react-native';
 
 import Navigation from './src/components/Navigation';
 import colors  from './src/helpers/colors';
