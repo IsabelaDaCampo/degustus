@@ -1,16 +1,37 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Image, StyleSheet, Dimensions } from 'react-native';
 
 import { ItemContent } from './style';
 
-export default function Header() {
+const width = Dimensions.get('screen').width;
+
+export default function Header({asset}) {
   return (
-    <ItemContent>
+    // <View>
       <Image 
-        source={require('../../../assets/degustus/beer.png')} 
-        style= {{flex:1, width: undefined, height: undefined}}
-        resizeMode='contain'
+        source={asset === 'beer' ?  
+          require('../../../assets/degustus/beer_header.png') :
+          require('../../../assets/degustus/gourmet_header.png')}
+        style={estilos.topo}
+        // resizeMode='contain'
       />
-    </ItemContent>
+    // </View>
   );
 };
+
+const estilos = StyleSheet.create({
+  topo: {
+    width: "100%",
+    height: 578 / 768 * width,
+  },
+  titulo: {
+    width: "100%",
+    position: "absolute",
+    textAlign: "center",
+    fontSize: 16,
+    lineHeight: 26,
+    color: "white",
+    fontWeight: "bold",
+    padding: 16,
+  },
+});

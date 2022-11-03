@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import { Home, Settings, Beer } from '../screens';
+import { Home, Settings, Beer, Gourmet } from '../screens';
 import SettingsButton from '../components/SettingsButton';
 import colors from '../helpers/colors';
 
@@ -29,7 +29,8 @@ export default function Navigation() {
         <Stack.Screen name="Home" component={Home} />
         {/* <Stack.Screen name="Profile" component={Profile} /> */}
         <Stack.Screen name="Settings" component={Settings} />
-        <Stack.Screen name="Beer" component={Beer} />
+        <Stack.Screen name="Beer" component={Beer} options={{ headerShown: false }}/>
+        <Stack.Screen name="Gourmet" component={Gourmet} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -7,8 +7,8 @@ import About from '../../components/About';
 export default function Beer() {
   return (
     <View>
-      <Header asset={'beer'}/>
-      <About iconType={'beer-outline'} type={'Bar e Lanchonete'} address={'aqui um exemplo de endereço'} />
+      <Header asset={'gourmet'} />
+      <About iconType={'restaurant-outline'} type={'Cozinha Gourmet'} address={'aqui um exemplo de endereço'} />
     </View>
   );
 };

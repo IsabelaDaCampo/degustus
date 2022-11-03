@@ -1,9 +1,12 @@
-import { View } from 'react-native';
+import { View, Dimensions } from 'react-native';
 import styled from 'styled-components';
+
 
 import colors from '../../helpers/colors';
 
+
 export const ItemContent = styled(View)`
-  height: 50%;
-  background-color: ${colors.black};
+  /* width: 100%,
+  height: 578px / 768px * width,
+  background-color: ${colors.black}; */
 `;
