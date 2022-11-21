@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BASE_API_URL = 'http://IP_DEGUSTUS:8080';
+const BASE_API_URL = 'http://IP_DEGUSTUS:8080/api/';
 const PATHS = {
   products: 'item',
 }
@@ -17,6 +17,7 @@ export async function fetchData(path, method = 'GET', id = '', body = {}) {
   try {
     let url = await getUrl(path);
     url += id;
+    console.log(url)
     let response = await fetch(url, {
       method: method,
       headers: {

@@ -3,7 +3,7 @@ export default {
     white: '#FFF',
     black: '#000',
     grey: '#CCC',
-    greyLight: '#00000029',
+    greyLight: '#e6e6e6',
     greylighten: '#F5F5F5',
     green: '#2B9751',
     secondary: '#b30000',
